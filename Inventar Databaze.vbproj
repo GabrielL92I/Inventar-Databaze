@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Costura.Fody.4.1.0\build\Costura.Fody.props" Condition="Exists('packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE1FE1BC-F11F-4C92-9D4C-884B70087C4E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Inventar_Database.My.MyApplication</StartupObject>
+    <RootNamespace>Inventar_Database</RootNamespace>
+    <AssemblyName>Inventar Database</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Inventar Database.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Inventar Database.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Iconleak-Cerulean-Database.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Costura, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>packages\Costura.Fody.4.1.0\lib\net40\Costura.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrim.Designer.vb">
+      <DependentUpon>Administrim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bli.Designer.vb">
+      <DependentUpon>Bli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hyrje.Designer.vb">
+      <DependentUpon>Hyrje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hyrje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resize.vb" />
+    <Compile Include="Fjalkalimi Databazes.Designer.vb">
+      <DependentUpon>Fjalkalimi Databazes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fjalkalimi Databazes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupBoxA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventar Databaze.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventar Databaze.Designer.vb">
+      <DependentUpon>Inventar Databaze.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klasat e produkteve.Designer.vb">
+      <DependentUpon>Klasat e produkteve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Klasat e produkteve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Konfigurime.Designer.vb">
+      <DependentUpon>Konfigurime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Konfigurime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lidhje.vb" />
+    <Compile Include="Lidhje2.vb" />
+    <Compile Include="Lidh2.vb" />
+    <Compile Include="Magazina.Designer.vb">
+      <DependentUpon>Magazina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Magazina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Ofert.Designer.vb">
+      <DependentUpon>Ofert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ofert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shit.Designer.vb">
+      <DependentUpon>Shit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistika.Designer.vb">
+      <DependentUpon>Statistika.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Statistika.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Administrim.resx">
+      <DependentUpon>Administrim.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bli.resx">
+      <DependentUpon>Bli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fjalkalimi Databazes.resx">
+      <DependentUpon>Fjalkalimi Databazes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hyrje.resx">
+      <DependentUpon>Hyrje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventar Databaze.resx">
+      <DependentUpon>Inventar Databaze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Klasat e produkteve.resx">
+      <DependentUpon>Klasat e produkteve.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Konfigurime.resx">
+      <DependentUpon>Konfigurime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magazina.resx">
+      <DependentUpon>Magazina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ofert.resx">
+      <DependentUpon>Ofert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shit.resx">
+      <DependentUpon>Shit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistika.resx">
+      <DependentUpon>Statistika.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ModernXP-09-Keyboard-icon %281%291.png" />
+    <None Include="Resources\tedhena.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Awicons-Vista-Artistic-Chart.ico" />
+    <None Include="Resources\xxoferte.jpg" />
+    <Content Include="Iconleak-Cerulean-Database.ico" />
+    <Content Include="Icons-Land-Gis-Gps-Map-Pharmacy.ico" />
+    <None Include="Resources\xx.jpg" />
+    <None Include="packages.config" />
+    <None Include="Resources\Webalys-Kameleon.pics-Settings-5.ico" />
+    <None Include="Resources\Inipagi-Job-Seeker-List.ico" />
+    <None Include="Resources\Juliewiens-Christmas-Gift.ico" />
+    <None Include="Resources\Lgp85-Magic-Christmas-Configuration.ico" />
+    <None Include="Resources\Rockettheme-Ecommerce-Basket.ico" />
+    <None Include="Resources\Elegantthemes-Beautiful-Flat-Document.ico" />
+    <None Include="Resources\pencil_medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="packages\Fody.6.0.0\build\Fody.targets" Condition="Exists('packages\Fody.6.0.0\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Fody.6.0.0\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Fody.6.0.0\build\Fody.targets'))" />
+    <Error Condition="!Exists('packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Costura.Fody.4.1.0\build\Costura.Fody.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
